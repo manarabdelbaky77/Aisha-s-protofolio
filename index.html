@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aisha's Architecture Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Hi, I'm Aisha Mostafa 👋</h1>
+        <p>Architecture Engineering Student</p>
+    </header>
+
+    <!-- Summary Section -->
+    <section class="about">
+        <h2>Summary</h2>
+        <p>
+            I am an Architecture Engineering student, passionate about creative design and sustainable architecture.
+            Skilled in transforming ideas into detailed drawings and 3D models using modern design tools.
+            I aim to create innovative projects that combine aesthetics, functionality, and sustainability.
+        </p>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education">
+        <h2>Education</h2>
+        <div class="edu-item">
+            <h3>🎓 Faculty of Engineering - Architecture Department</h3>
+            <p><strong>MSA University</strong> — 2023 to 2028</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>🏗️ Architectural Design: Concept development, space planning, and creative visualization</li>
+            <li>🖥️ Software: AutoCAD, Revit, SketchUp, Lumion, Photoshop, InDesign</li>
+            <li>🎨 3D Modeling & Rendering: Realistic visualizations and walkthroughs</li>
+            <li>📐 Technical Drawing: Plans, sections, elevations, and construction documents</li>
+            <li>🏠 Model Making: Using various materials and techniques</li>
+            <li>🌿 Sustainability: Eco-friendly design and energy-efficient solutions</li>
+            <li>🤝 Teamwork & Communication: Collaborative work in design studios</li>
+            <li>🗣️ Presentation Skills: Verbal and visual project presentation</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects">
+        <h2>Projects</h2>
+
+        <div class="project-card" onclick="toggleDetails('project1')">
+            <h3>🏡 Residential Villa Design</h3>
+            <div id="project1" class="project-details">
+                <p><strong>Description:</strong> Designed a two-story modern villa emphasizing open spaces, natural light, and connection with outdoor areas.</p>
+                <p><strong>Tools Used:</strong> AutoCAD, Revit, Lumion</p>
+                <p><strong>Key Features:</strong></p>
+                <ul>
+                    <li>Contemporary façade with natural stone and wooden textures</li>
+                    <li>Open-plan layout for flexible living</li>
+                    <li>Passive ventilation and rooftop solar panels</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="project-card" onclick="toggleDetails('project2')">
+            <h3>🏙️ Urban Community Center</h3>
+            <div id="project2" class="project-details">
+                <p><strong>Description:</strong> A community center designed as a social and cultural hub for urban residents.</p>
+                <p><strong>Tools Used:</strong> SketchUp, Photoshop, InDesign</p>
+                <p><strong>Key Features:</strong></p>
+                <ul>
+                    <li>Multipurpose halls and exhibition spaces</li>
+                    <li>Design inspired by local architectural identity</li>
+                    <li>Green roofs and shaded courtyards</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="project-card" onclick="toggleDetails('project3')">
+            <h3>🏫 Educational Campus Design</h3>
+            <div id="project3" class="project-details">
+                <p><strong>Description:</strong> Conceptual design for a modern educational campus that promotes interactive learning.</p>
+                <p><strong>Tools Used:</strong> Revit, AutoCAD, Lumion</p>
+                <p><strong>Key Features:</strong></p>
+                <ul>
+                    <li>Modular classrooms and flexible learning zones</li>
+                    <li>Central courtyard with natural light and ventilation</li>
+                    <li>Energy-efficient materials and rainwater harvesting</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <h2>Contact</h2>
+        <button id="showContactBtn" onclick="toggleContact()">Show Contact Info</button>
+        <div id="contactInfo" class="hidden">
+            <p>📞 Phone: 01000597961</p>
+            <p>📧 Email: <a href="mailto:aishamostafa104@gmail.com">aishamostafa104@gmail.com</a></p>
+            <p>🔗 LinkedIn: <a href="https://www.linkedin.com/" target="_blank">linkedin.com/in/aishamostafa</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Manar Abdelbaky. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Toggle project details
+        function toggleDetails(id) {
+            const details = document.getElementById(id);
+            details.classList.toggle('show');
+        }
+
+        // Toggle contact info
+        function toggleContact() {
+            const contact = document.getElementById("contactInfo");
+            contact.classList.toggle("hidden");
+        }
+    </script>
+</body>
+</html>
